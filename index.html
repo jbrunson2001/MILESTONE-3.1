@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An overview of web browsers, browser engines, market share, and project topics.">
+    <title>Home | Web Browsers and Browser Engines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="course-label">IT 3203 Project Milestone 3</p>
+            <h1>Web Browsers and Browser Engines</h1>
+            <p class="author-line">Created by Joshua Brunson</p>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page" class="current">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="engines.html">Engines</a></li>
+                    <li><a href="future.html">Future</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <section class="hero card">
+            <div class="hero-text">
+                <p class="eyebrow">Research Topic Overview</p>
+                <h2>The software between a person and the Web</h2>
+                <p>A web browser is the application people open to visit websites. A browser engine is the major internal component that reads web content and helps turn HTML, CSS, JavaScript, images, and other resources into the page shown on the screen.</p>
+                <p>This project follows the development of browsers from the first browser at CERN to the modern Blink, WebKit, and Gecko engines. It also explains why browser standards, competition, privacy, security, and mobile support still matter.</p>
+                <div class="button-links">
+                    <a class="button-link" href="history.html">Read the history</a>
+                    <a class="button-link secondary" href="quiz.html">Take the quiz</a>
+                </div>
+            </div>
+            <figure class="hero-figure">
+                <img src="images/browser_meme.png" alt="A humorous image of older browser mascots asking for more speed.">
+                <figcaption>A humorous look at the long competition to make browsers faster.</figcaption>
+            </figure>
+        </section>
+
+        <section class="card">
+            <h2>Browser versus browser engine</h2>
+            <div class="two-column">
+                <div>
+                    <h3>Web browser</h3>
+                    <p>The browser is the complete application used by the user. It includes the address bar, tabs, bookmarks, history, downloads, privacy settings, developer tools, and other controls.</p>
+                </div>
+                <div>
+                    <h3>Browser engine</h3>
+                    <p>The engine handles much of the work behind the page. It parses HTML, applies CSS, calculates layout, works with JavaScript, and paints the visual result. Different browsers can share the same engine.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Current browser market snapshot</h2>
+            <p>StatCounter's worldwide data for June 2026 shows that Chrome remains the largest browser by a wide margin. Market share does not measure quality by itself, but it helps explain why Chromium and Blink have so much influence on modern web development.</p>
+            <div class="table-wrap" role="region" aria-label="Browser market share table" tabindex="0">
+                <table>
+                    <caption>Worldwide browser market share, June 2026</caption>
+                    <thead>
+                        <tr><th scope="col">Browser</th><th scope="col">Share</th><th scope="col">Main engine</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Chrome</td><td>69.65%</td><td>Blink</td></tr>
+                        <tr><td>Safari</td><td>15.31%</td><td>WebKit</td></tr>
+                        <tr><td>Edge</td><td>5.21%</td><td>Blink</td></tr>
+                        <tr><td>Firefox</td><td>3.33%</td><td>Gecko</td></tr>
+                        <tr><td>Samsung Internet</td><td>1.95%</td><td>Blink</td></tr>
+                        <tr><td>Opera</td><td>1.74%</td><td>Blink</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="source-note">Source: StatCounter Global Stats, June 2026. See the References page.</p>
+        </section>
+
+        <section class="card">
+            <h2>What this website covers</h2>
+            <div class="topic-grid">
+                <article class="topic-card"><h3>History</h3><p>The first browser, Mosaic, the browser wars, Firefox, Chrome, and the modern browser market.</p><a href="history.html">Open History</a></article>
+                <article class="topic-card"><h3>Engines</h3><p>How rendering works and how Blink, WebKit, and Gecko compare.</p><a href="engines.html">Open Engines</a></article>
+                <article class="topic-card"><h3>Future</h3><p>Interoperability, privacy, performance, mobile use, and engine diversity.</p><a href="future.html">Open Future</a></article>
+                <article class="topic-card"><h3>Concepts</h3><p>A glossary of important browser, HTML, CSS, JavaScript, and standards terms.</p><a href="concepts.html">Open Concepts</a></article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p><strong>Joshua Brunson</strong> | IT 3203: Introduction to Web Development</p>
+            <p>This website is a class project about web browsers and browser engines.</p>
+            <p><a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">Visit the IT 3203 course website</a></p>
+        </div>
+    </footer>
+</body>
+</html>

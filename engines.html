@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How browser engines render pages and how Blink, WebKit, and Gecko compare.">
+    <title>Engines | Web Browsers and Browser Engines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="course-label">IT 3203 Project Milestone 3</p>
+            <h1>Web Browsers and Browser Engines</h1>
+            <p class="author-line">Created by Joshua Brunson</p>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="engines.html" aria-current="page" class="current">Engines</a></li>
+                    <li><a href="future.html">Future</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <article class="card article-page">
+            <p class="eyebrow">Main Research Page 2</p>
+            <h2>How Browser Engines Work</h2>
+            <p class="lead">A browser engine connects web code to the visual and interactive page. It coordinates several systems rather than performing only one simple task.</p>
+
+            <figure class="wide-figure">
+                <img src="images/browser_process.svg" alt="Diagram showing a user request, web server, browser engine, and displayed page.">
+                <figcaption>A simplified browser rendering process created for this project.</figcaption>
+            </figure>
+
+            <section>
+                <h3>A simplified rendering process</h3>
+                <ol class="numbered-steps">
+                    <li><strong>Request:</strong> The browser requests a resource from a web server, usually using HTTPS.</li>
+                    <li><strong>Download:</strong> The server returns HTML and may also provide CSS, JavaScript, images, fonts, and media.</li>
+                    <li><strong>Parse:</strong> The browser builds structures representing the HTML document and CSS rules.</li>
+                    <li><strong>Layout:</strong> The engine calculates the size and position of visible elements.</li>
+                    <li><strong>Paint:</strong> Text, colors, borders, and images are drawn to the screen.</li>
+                    <li><strong>Update:</strong> JavaScript and user actions can change the document, causing parts of the page to be recalculated and redrawn.</li>
+                </ol>
+            </section>
+
+            <figure class="wide-figure">
+                <img src="images/engine_map.svg" alt="Diagram listing browsers that use Blink, WebKit, and Gecko.">
+                <figcaption>Several browser brands share an engine, so the number of browsers is larger than the number of major engines.</figcaption>
+            </figure>
+
+            <section>
+                <h3>The three major engines</h3>
+                <div class="engine-grid">
+                    <article class="engine-card"><h4>Blink</h4><p>Blink is the rendering engine used by Chromium. Chrome, Edge, Brave, Opera, and other Chromium-based browsers use it. Blink has a large influence because Chromium-based browsers have a large combined market share.</p></article>
+                    <article class="engine-card"><h4>WebKit</h4><p>WebKit is an open-source web content engine used by Safari and many applications on Apple platforms. The project emphasizes compatibility, standards, performance, battery life, security, and privacy.</p></article>
+                    <article class="engine-card"><h4>Gecko</h4><p>Gecko is Mozilla's rendering engine and powers Firefox. It includes HTML parsing and rendering, networking, JavaScript integration, the DOM, graphics, and other browser systems.</p></article>
+                </div>
+            </section>
+
+            <section>
+                <h3>Rendering engine versus JavaScript engine</h3>
+                <p>These terms are related but not identical. A rendering engine handles document layout and painting. A JavaScript engine executes JavaScript code. Chrome and Chromium use V8 for JavaScript, Safari uses JavaScriptCore, and Firefox uses SpiderMonkey. The systems work together when a script changes the page.</p>
+            </section>
+
+            <div class="table-wrap" role="region" aria-label="Engine comparison table" tabindex="0">
+                <table>
+                    <caption>Comparison of major browser engines</caption>
+                    <thead><tr><th scope="col">Engine</th><th scope="col">Main browser examples</th><th scope="col">Project or organization</th><th scope="col">Important role</th></tr></thead>
+                    <tbody>
+                        <tr><td>Blink</td><td>Chrome, Edge, Brave, Opera</td><td>Chromium project</td><td>Widely used engine with broad platform support.</td></tr>
+                        <tr><td>WebKit</td><td>Safari</td><td>WebKit open-source project / Apple contributors</td><td>Major engine on Apple devices and embedded applications.</td></tr>
+                        <tr><td>Gecko</td><td>Firefox</td><td>Mozilla</td><td>Independent open-source implementation that supports engine diversity.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <aside class="note-box">
+                <h3>Why multiple engines matter</h3>
+                <p>Web standards are stronger when more than one independent engine implements and tests them. Multiple engines can reveal unclear standards, compatibility problems, and different technical approaches.</p>
+            </aside>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p><strong>Joshua Brunson</strong> | IT 3203: Introduction to Web Development</p>
+            <p>This website is a class project about web browsers and browser engines.</p>
+            <p><a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">Visit the IT 3203 course website</a></p>
+        </div>
+    </footer>
+</body>
+</html>

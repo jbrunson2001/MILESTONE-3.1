@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive self-assessment quiz about browsers and browser engines.">
+    <title>Quiz | Web Browsers and Browser Engines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="course-label">IT 3203 Project Milestone 3</p>
+            <h1>Web Browsers and Browser Engines</h1>
+            <p class="author-line">Created by Joshua Brunson</p>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="engines.html">Engines</a></li>
+                    <li><a href="future.html">Future</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="quiz.html" aria-current="page" class="current">Quiz</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <section class="card quiz-card">
+            <p class="eyebrow">Interactive Self-Assessment</p>
+            <h2>Browser and Browser Engine Quiz</h2>
+            <p class="quiz-intro">Answer all five questions after reviewing the research pages. A score of 70 or higher is a passing result.</p>
+
+            <form id="quizForm" class="quiz-form">
+                <fieldset class="question">
+                    <legend>Question 1: Fill in the blank</legend>
+                    <label for="q1">What browser engine is used by Firefox?</label>
+                    <input class="text-answer" type="text" id="q1" name="q1" maxlength="20" autocomplete="off" required>
+                    <p class="help-text">Enter one engine name.</p>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend>Question 2: Multiple choice</legend>
+                    <p>Which browser engine is used by Safari?</p>
+                    <label class="choice"><input type="radio" name="q2" value="Blink" required> <span>Blink</span></label>
+                    <label class="choice"><input type="radio" name="q2" value="WebKit"> <span>WebKit</span></label>
+                    <label class="choice"><input type="radio" name="q2" value="Gecko"> <span>Gecko</span></label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend>Question 3: Multiple choice</legend>
+                    <p>What language gives a web page its basic structure and meaning?</p>
+                    <label class="choice"><input type="radio" name="q3" value="CSS" required> <span>CSS</span></label>
+                    <label class="choice"><input type="radio" name="q3" value="HTML"> <span>HTML</span></label>
+                    <label class="choice"><input type="radio" name="q3" value="Python"> <span>Python</span></label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend>Question 4: Multiple choice</legend>
+                    <p>What is one major reason web standards are important?</p>
+                    <label class="choice"><input type="radio" name="q4" value="Cost" required> <span>They increase the cost of creating websites.</span></label>
+                    <label class="choice"><input type="radio" name="q4" value="Compatibility"> <span>They improve compatibility across browsers and devices.</span></label>
+                    <label class="choice"><input type="radio" name="q4" value="OneBrowser"> <span>They make every person use the same browser.</span></label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend>Question 5: Select all that apply</legend>
+                    <p>Which choices are browser engines?</p>
+                    <label class="choice"><input type="checkbox" name="q5" value="Blink"> <span>Blink</span></label>
+                    <label class="choice"><input type="checkbox" name="q5" value="Chrome"> <span>Chrome</span></label>
+                    <label class="choice"><input type="checkbox" name="q5" value="Gecko"> <span>Gecko</span></label>
+                    <label class="choice"><input type="checkbox" name="q5" value="HTML"> <span>HTML</span></label>
+                    <label class="choice"><input type="checkbox" name="q5" value="WebKit"> <span>WebKit</span></label>
+                    <p id="q5Error" class="form-error" aria-live="polite"></p>
+                </fieldset>
+
+                <div class="button-row">
+                    <button type="submit">Submit Quiz</button>
+                    <button type="reset" class="secondary-button">Retake Quiz</button>
+                </div>
+            </form>
+
+            <section id="results" class="quiz-results" tabindex="-1" aria-live="polite" hidden></section>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p><strong>Joshua Brunson</strong> | IT 3203: Introduction to Web Development</p>
+            <p>This website is a class project about web browsers and browser engines.</p>
+            <p><a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">Visit the IT 3203 course website</a></p>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
