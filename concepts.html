@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Joshua Brunson and the IT 3203 browser engine project.">
-    <title>About | Web Browsers and Browser Engines</title>
+    <meta name="description" content="Key browser, HTML, CSS, JavaScript, standards, and responsive design concepts.">
+    <title>Concepts | Web Browsers and Browser Engines</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <!-- The same responsive header and menu are used on every page. -->
     <header class="site-header">
         <div class="header-inner">
             <p class="course-label">IT 3203 Project Milestone 3</p>
@@ -22,47 +23,58 @@
                     <li><a href="history.html">History</a></li>
                     <li><a href="engines.html">Engines</a></li>
                     <li><a href="future.html">Future</a></li>
-                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="concepts.html" aria-current="page" class="current">Concepts</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="references.html">References</a></li>
-                    <li><a href="about.html" aria-current="page" class="current">About</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main id="main-content" class="main-content">
-        <section class="card about-grid">
-            <div>
-                <p class="eyebrow">About the Author</p>
-                <h2>Joshua Brunson</h2>
-                <p>I am a Kennesaw State University student studying Cybersecurity. This project was created for IT 3203: Introduction to Web Development.</p>
-                <p>I chose browsers and browser engines because nearly everyone uses a browser, but the engine behind the browser is easy to overlook. The topic connects directly to HTML, CSS, JavaScript, web standards, security, and responsive design.</p>
-            </div>
-            <div class="gold-panel">
-                <h3>Project goals</h3>
-                <ul>
-                    <li>Explain the difference between a browser and browser engine</li>
-                    <li>Present organized research with reliable sources</li>
-                    <li>Use semantic HTML and one external CSS file</li>
-                    <li>Use an external JavaScript file for the quiz</li>
-                    <li>Make every page responsive and mobile friendly</li>
-                    <li>Practice testing at desktop, tablet, and phone sizes</li>
-                </ul>
+        <section class="card">
+            <p class="eyebrow">Key Concepts Page</p>
+            <h2>Browser and Web Development Concepts</h2>
+            <p class="lead">These concepts help explain what browsers receive, how engines process it, and why a page may behave differently across devices.</p>
+
+            <div class="concept-grid">
+                <article><h3>Browser</h3><p>The complete application used to navigate the Web, manage tabs, store settings, and display web content.</p></article>
+                <article><h3>Browser engine</h3><p>The internal system that interprets web content, calculates layout, and produces the visual page.</p></article>
+                <article><h3>Rendering</h3><p>The process of turning HTML, CSS, images, and other resources into pixels on the screen.</p></article>
+                <article><h3>HTML</h3><p>The core markup language used to describe the structure and meaning of web content.</p></article>
+                <article><h3>CSS</h3><p>The language used to control presentation, including colors, spacing, typography, and responsive layout.</p></article>
+                <article><h3>JavaScript</h3><p>A programming language used to add behavior, react to events, change the DOM, and build interactive applications.</p></article>
+                <article><h3>DOM</h3><p>The Document Object Model is the browser's structured representation of a web document. JavaScript can read and change it.</p></article>
+                <article><h3>Web standard</h3><p>A shared technical specification that helps browsers and developers implement the Web consistently.</p></article>
+                <article><h3>HTTP and HTTPS</h3><p>Protocols used for communication between a browser and web server. HTTPS protects the connection with encryption.</p></article>
+                <article><h3>URL</h3><p>The address used to identify and locate a resource on the Web.</p></article>
+                <article><h3>Responsive design</h3><p>A design approach that allows the same page to adjust to different screen sizes and input methods.</p></article>
+                <article><h3>Media query</h3><p>A CSS rule that applies styles when conditions such as viewport width are met.</p></article>
             </div>
         </section>
 
         <section class="card">
-            <h2>How the project developed</h2>
-            <div class="milestone-grid">
-                <article><h3>Milestone 1</h3><p>Built the original multi-page research website using HTML and CSS.</p></article>
-                <article><h3>Milestone 2</h3><p>Added the JavaScript self-assessment quiz, score results, and reset option.</p></article>
-                <article><h3>Milestone 3</h3><p>Expanded the research, improved the layout, and added responsive rules for desktop, tablet, and mobile screens.</p></article>
-            </div>
+            <h2>How the concepts connect</h2>
+            <ol class="numbered-steps">
+                <li>A user enters a <strong>URL</strong> in a <strong>browser</strong>.</li>
+                <li>The browser uses <strong>HTTPS</strong> to request files from a server.</li>
+                <li>The browser engine parses <strong>HTML</strong> and <strong>CSS</strong>.</li>
+                <li>The browser creates and displays the <strong>DOM</strong> and visual layout.</li>
+                <li><strong>JavaScript</strong> can react to events and update the DOM.</li>
+                <li><strong>Web standards</strong> help the page behave consistently in different engines.</li>
+                <li><strong>Responsive design</strong> and <strong>media queries</strong> adjust the page for the user's screen.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Standards and accessibility</h2>
+            <p>Standards are not only about making a page look the same. They also help browsers expose correct meaning to assistive technologies. Semantic HTML, alternative text, keyboard access, readable color contrast, labeled form controls, and predictable navigation improve usability for more people.</p>
         </section>
 
     </main>
 
+    <!-- Visual footer stays at the bottom because the body uses flexbox. -->
     <footer class="site-footer">
         <div class="footer-inner">
             <p><strong>Joshua Brunson</strong> | IT 3203: Introduction to Web Development</p>
